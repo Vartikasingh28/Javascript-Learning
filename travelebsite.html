@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+                url('./11.jpg');
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        :root {
+            --pink: #e84393;
+        }
+
+        .h1-text .heading {
+            text-align: center;
+            font-size: 4rem;
+            background-color: rgba(255, 51, 153, .05);
+            color: #333;
+            margin: 1rem 0;
+
+        }
+
+        .heading span {
+            color: var(--pink);
+        }
+
+        .h1-text .row {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+            padding-top: 3rem;
+        }
+
+        .h1-text .row .video1 {
+            position: relative;
+            flex: 1 1 40rem;
+        }
+
+        .h1-text .row .video1 video {
+            width: 100%;
+            border: 1.5rem solid #fff;
+            border-radius: .5rem;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .btn:hover {
+            background: var(--pink);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }
+
+        html {
+            font-size: 88%;
+            scroll-behavior: smooth;
+            scroll-padding-top: 6rem;
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 2rem 2%;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            border-radius: 5rem;
+            background: #333;
+            color: #fff;
+            padding: .9rem 3.5rem;
+            cursor: pointer;
+            font-size: 1.7rem;
+            -webkit-border-radius: ` 5rem;
+            -moz-border-radius: 5rem;
+            -ms-border-radius: 5rem;
+            -o-border-radius: 5rem;
+        }
+
+        .h1-text .row .content {
+            flex: 1 1 40rem;
+
+        }
+
+
+        .one {
+            color: white;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+
+        .two a {
+            /* margin-left: 80px; */
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .two a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+
+        .two a:hover::before {
+            width: 90%;
+        }
+
+
+        .three a {
+            /* margin-left: 100px; */
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: indianred;
+            color: white;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+
+        .three a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .h-text a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .h-text {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .h-text span {
+            letter-spacing: 5px;
+        }
+
+        .h-text h1 {
+            font-size: 3.5em;
+        }
+
+        .h-text a {
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="one">Travel-X</div>
+            <div class="two">
+                <a href="#">Home</a>
+                <a href="#">Hill station</a>
+                <a href="#">Best offer's</a>
+                <a href="#">Our Sites</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="three">
+                <a href="#">Register</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="h-text">
+        <span>Enjoy</span>
+        <h1>International Travel Agency</h1>
+        <br>
+        <a href="#">Book your trip</a>
+    </section>
+    <section class="h1-text">
+        <h1 class="heading"><span>About</span> us</h1>
+        <div class="row">
+            <div class="video1">
+                <video src="travel1..mp4" loop autoplay muted></video>
+                <h3>Best travel destination</h3>
+            </div>
+            <div class="content">
+                <h2>Why choosen us?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero quam, minima corrupti earum
+                    assumenda, omnis ullam nihil vel est adipisci ut labore dolorum. Beatae perferendis non molestias
+                    architecto ad?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique magni voluptatem iure!
+                    Laudantium, facere hic.</p>
+                <a href="#" class="btn">Learn More</a>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

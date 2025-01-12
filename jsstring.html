@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myid"></h1>
+    <script>
+        //first method
+        // var a ="hi";
+        //second method
+        // var a = new String("hi i am javaScript");
+        // document.write(a + "<br>");
+        // document.write(a[0]);
+
+        // JavaScript String Methods
+
+        // 1.JavaScript String charAt(index) Method
+        // var str = "zyxmy name is java";
+        // document.write(str.charAt(2));//x
+
+        // 2) JavaScript String concat(str) Method
+        // var s1 = "Vartika ";
+        // var s2 = "Singh";
+        // var s3 = s1.concat(s2);
+        // document.write(s3);//vartika singh
+
+        // 3) JavaScript String indexOf(str) Method
+        // var s1 = "javascript from javascript indexof";
+        // var n = s1.indexOf("from");
+        // document.write(n); //11
+
+        // 4) JavaScript String lastIndexOf(str) Method
+        // var s1 = "javascript from javascript indexof";
+        // var n = s1.lastIndexOf("java");//16 starting se count 
+        // document.write(n);
+
+        // 5) JavaScript String toLowerCase() Method
+        // var s1 = "JavaScript toLowerCase Example";
+        // var s2 = s1.toLowerCase();
+        // document.write(s2);
+
+        // 6) JavaScript String toUpperCase() Method
+        // var s1 = "JavaScript toLowerCase Example";
+        // var s2 = s1.toUpperCase();
+        // document.write(s2);
+
+        // 7) JavaScript String slice(beginIndex, endIndex)
+        // var s1 = "abcdefgh";
+        // var s2 = s1.slice(2, 5);//start from 2 exclude 5
+        // document.write(s2);
+
+
+        // 8) JavaScript String trim() Method
+        // var s1 = "     javascript trim    ";
+        // var s2 = s1.trim();
+        // document.write(s2);
+
+        // 9) JavaScript String split() Method
+        // var str = "This is Javascript website";
+        // document.write(str.split(" "));
+
+        // 10) JavaScript String replaceAll() Method
+        // var a = "Hello javaScript java is a programming language ";
+        // document.getElementById("myid").innerHTML =
+        //     a.replaceAll(" ", "-")
+
+        // 11) JavaScript Splice  Method
+        // const fruits = ["Banana", "Orange", "Lemon",
+        //     "Apple", "Mango"];
+        // fruits.splice(1, 0, "gfhgfh");
+        // document.write(fruits);
+
+        // const fruits = ["Banana", "Orange", "Lemon",
+        //     "Apple", "Mango"];
+        // fruits.splice(2, 2, "javaScript");
+        // document.write(fruits)
+
+
+        // const fruits = ["Banana", "Orange", "Lemon",
+        //     "Apple", "Mango"];
+        // for (let i = 0; i < fruits.length; i++) {
+        //     if (fruits[i] == "Lemon") {
+        //         fruits.splice(2, 1);
+        //     }
+        // }
+        // document.write(fruits)
+
+
+        //    12. JavaScript Slice Method
+        const fruits = ["Banana", "Orange", "Lemon",
+            "Apple", "Mango"];
+        const citrus = fruits.slice(1, 3);
+        document.getElementById("myid").innerHTML =
+            citrus;
+
+    </script>
+</body>
+
+</html>

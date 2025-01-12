@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let x = this;
+        // console.log(this);
+        // When used alone, this refers to the global object.Because this is running
+        //  in the global scope.In a browser window the global object is[object Window]
+        // function sum() {
+        //     var add = 2 + 2;
+        //     console.log("Sum of two no. is " + add);
+        //     console.log(this);
+        // }
+        // sum();//in any function it will react as global object only ie. window
+        //in a method this refers to the owner object
+        // const Saumya = {
+        //     name: "Vartika",
+        //     quali: "btech",
+        //    sum :  function () {
+        //         var add = 2 + 2;
+        //         console.log("Sum of two no. is " + add);
+        //         console.log(this);
+        //     }
+        // }
+        // Saumya.sum();
+
+        // "use strict"
+        // function sum() {
+        //     var add = 2 + 2;
+        //     console.log("Sum of two no. is " + add);
+        //     console.log(this);
+        // }
+        // sum();
+        // In HTML event handlers, this refers to the HTML element that received the event:
+        //method is a function declaration inside a object property
+
+
+        function emp(id, name, salary) {
+            id = id;
+            name = name;
+            salary = salary;
+
+        }
+        id = prompt("enter the id");
+        name = prompt("enter your name");
+        salary = prompt("Enter your salary");
+        e = new emp(id, name, salary);
+
+        document.write(e.id + " " + e.name + " " + e.salary);
+
+    </script>
+</body>
+
+</html>

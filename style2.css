@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --orange: #ffa500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+
+}
+
+html {
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: #333;
+    align-items: center;
+    padding: 2rem 9%;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, -1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: #ffa500;
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.8rem;
+}
+
+header .navbar a:hover {
+    color: #ffa500;
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons a:hover {
+    color: #ffa500;
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0.100% 0, 0 0);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+
+}
+
+header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: #ffa500;
+}

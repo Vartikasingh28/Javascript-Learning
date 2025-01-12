@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hi">Hello</h1>
+    <h1 id="demo">Hello</h1>
+
+    <script>
+        // document.getElementById("hi").innerHTML = Date();
+        // var text = " ";
+        // var a = [12, 45, 89, 34, 23, 90];
+        // a.forEach(helo_fun);
+        // document.getElementById("demo").innerHTML = text;
+        // function helo_fun(item, index) {
+        //     text = text + index + " : " + item + "<br>";
+        // }
+
+        // function hello(a, b) {
+        //     this.a = a;
+        //     this.b = b;
+        // }
+        // var abc = new hello(78, 90);
+        // document.write("out side of the function value of a = " + abc.a);
+
+        function hello(a, b) {
+            this.a = a;
+            this.b = b;
+            this.c = a + b;//not necessary to print this.a we can print a & b bcz a is define by this.a
+        }
+        var e = parseInt(prompt("enter the value of e"));
+        var d = parseInt(prompt("enter the value of d"));
+        var abc = new hello(e, d);
+        document.write("out side of the function value of a = " + abc.c);
+    </script>
+</body>
+
+</html>

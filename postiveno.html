@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = -89;
+        switch (a > 0) {
+            case true:
+                document.write("positive number");
+                break;
+            case false:
+                switch (a < 0) {
+                    case true:
+                        document.write("Negative");
+                        break;
+                    case false:
+                        document.write("zero");
+                        break;
+                }
+        }
+    </script>
+</body>
+
+</html>

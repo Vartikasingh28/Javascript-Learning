@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //         var x = 0; var y = -1; var z = 4;
+        //         if (x > y && x > z) {
+        //             if (y > z) {
+        //                 alert(x + ", " + y + ", " + z);
+        //             } else {
+        //                 alert(x + ", " + z + ", " + y);
+        //             }
+        //         } else if (y > x && y > z) {
+        //             if (x > z) {
+        //                 alert(y + ", " + x + ", " + z);
+        //             } else {
+        //                 alert(y + ", " + z + ", " + x);
+        //             }
+        //         } else if (z > x && z > y) {
+        //             if (x > y) {
+        //                 alert(z + ", " + x + ", " + y);
+        //             } else {
+        //                 alert(z + ", " + y + ", " + x);
+        //             }
+        //         }
+
+        //Ans 5
+        //     function uppercase(str) {
+        //         var array1 = str.split(' ');  
+        //         var newarray1 = [];
+
+        //         for (var x = 0; x < array1.length; x++) {
+        //  newarray1.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
+        //         }
+        //         return newarray1.join(' ');
+        //     }
+        //     console.log(uppercase("the quick brown fox"));
+
+        function printArray(a) {
+            var len = a.length, i = 0;
+            if (len == 0)
+                console.log("Empty Array");
+            else {
+                do {
+                    console.log(a[i]);
+                } while (++i < len);
+            }
+        }
+
+        // var a = 5, b = 1
+        // var obj = { a: 10 }
+        // with (obj) {
+        //     alert(b)
+        // }
+    </script>
+</body>
+
+</html>

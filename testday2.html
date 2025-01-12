@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+
+</head>
+
+<body>
+    <!-- Ans 6 -->
+    <textarea id="myTextarea" rows="4" cols="50" placeholder="Enter text"></textarea>
+    <input type="text" id="myInput">
+    <button onclick="getValue()">Get Value</button>
+    <script>
+        function getValue() {
+            let textarea = document.getElementById("myTextarea");
+            let value1 = textarea.value;
+            var input = document.getElementById("myInput");
+            var value = input.value;
+            alert("you entered the value " + value);
+            console.log("you entered the value " + value1);
+        }
+    </script>
+</body>
+
+</html>
