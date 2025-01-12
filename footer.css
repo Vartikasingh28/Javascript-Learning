@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #EEECEB;
+}
+
+footer {
+    position: fixed;
+    background: #140B5C;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+
+footer .content .top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.content .top .logo-details{
+    color: #fff;
+    font-size: 30px;
+}
+.content .top .media-icons{
+    display: flex;
+    
+}
